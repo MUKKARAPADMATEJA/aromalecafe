@@ -296,11 +296,16 @@ section {
 
 .brand-logo {
 
-height: 45px;
+height: 60px;
     width: auto;
     filter: invert(1) hue-rotate(180deg) brightness(1.2);
     mix-blend-mode: screen;
     display: block;
+    transition: var(--transition);
+}
+
+.navbar.scrolled .brand-logo {
+    height: 50px;
 }
 
 .nav-links {
