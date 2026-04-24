@@ -97,5 +97,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+
+        // 6. Back to Top Button visibility
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            if (window.scrollY > 400) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        }
     });
+
+    // 7. Order Online Dropdown Toggle
+    const orderBtn = document.getElementById('orderBtn');
+    const orderDropdown = document.getElementById('orderDropdown');
+
+    if (orderBtn && orderDropdown) {
+        orderBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            orderDropdown.classList.toggle('show');
+        });
+
+        document.addEventListener('click', () => {
+            orderDropdown.classList.remove('show');
+        });
+    }
 });

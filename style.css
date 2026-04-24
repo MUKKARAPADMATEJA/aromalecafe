@@ -12,11 +12,11 @@
     --text-main: #fefae0;
     --text-muted: #b4a89d;
     --border-color: rgba(212, 163, 115, 0.15);
-    
+
     /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Poppins', sans-serif;
-    
+
     /* Transitions */
     --transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     --transition-slow: 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -155,6 +155,62 @@ section {
     box-shadow: 0 0 20px var(--primary-glow);
 }
 
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0.5rem 0;
+    min-width: 160px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 10;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-20px);
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.8rem 1.5rem;
+    color: var(--text-main);
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.dropdown-menu a:hover {
+    background: var(--bg-hover);
+    color: var(--primary);
+}
+
+.dropdown-menu i {
+    color: var(--primary);
+    width: 20px;
+    text-align: center;
+}
+
+.platform-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
 /* ========================
    Animations
    ======================== */
@@ -239,7 +295,8 @@ section {
 }
 
 .brand-logo {
-    height: 45px;
+
+height: 45px;
     width: auto;
     filter: invert(1) hue-rotate(180deg) brightness(1.2);
     mix-blend-mode: screen;
@@ -338,13 +395,15 @@ section {
    Hero Section
    ======================== */
 .hero {
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    background: url('assets/images/hero-bg.jpg') center/cover no-repeat;
-    background-attachment: fixed;
+    text-align: center;
+    color: var(--text-light);
+    background: url('https://images.unsplash.com/photo-1559925393-8be0ec41b5ec?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+    overflow: hidden;
 }
 
 .hero-overlay {
@@ -366,15 +425,16 @@ section {
 }
 
 .hero h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     margin-bottom: 1.5rem;
-    text-transform: capitalize;
+    font-weight: 700;
 }
 
 .hero h1 .highlight {
     color: var(--primary);
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
+    font-family: var(--font-heading);
 }
 
 .hero p {
@@ -796,37 +856,8 @@ section {
     transition: transform 0.6s ease;
 }
 
-.gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(15,12,10,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: var(--transition);
-}
-
-.gallery-overlay i {
-    font-size: 2rem;
-    color: #fff;
-    transform: scale(0.5);
-    transition: var(--transition);
-}
-
 .gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
-
-.gallery-item:hover .gallery-overlay i {
-    transform: scale(1);
+    transform: scale(1.05);
 }
 
 .item-1 { grid-column: 1 / 3; grid-row: 1 / 3; }
@@ -1116,4 +1147,37 @@ section {
     padding: 2rem;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
+}
+
+/* ========================
+   Back to Top Button
+   ======================== */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: var(--bg-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--primary-glow);
 }
