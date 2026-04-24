@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aaromale - A lifestyle and creative hub in Hyderabad. Enjoy coffee, conversations, open mics, events, and workshops in a cozy, bohemian sanctuary.">
+    <title>Aaromale | Cafe & Creative Community</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Aaromale<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#menu">Menu</a>
+                <a href="#events">Events</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#cta" class="btn btn-outline">Reserve</a>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://wa.me/1234567890" target="_blank" class="fab whatsapp" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+1234567890" class="fab call" aria-label="Call Us"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-up">More Than a Café <br><span class="highlight">A Space for Creators</span></h1>
+            <p class="fade-up delay-1">Coffee, Conversations, and Creativity come together at Aaromale.</p>
+            <div class="hero-btns fade-up delay-2">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#events" class="btn btn-secondary">Join the Community</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container section-grid">
+            <div class="about-image-wrapper reveal-left">
+                <img src="assets/images/about.png" alt="Aaromale Cafe Ambience" class="about-img">
+                <div class="image-accent"></div>
+            </div>
+            <div class="about-content reveal-right">
+                <h2 class="section-title">A Sanctuary for <span>Thinkers & Artists</span></h2>
+                <p>Located in the heart of Hyderabad, Aaromale is more than just a place to grab a coffee. We are a lifestyle and creative hub designed to inspire.</p>
+                <p>Whether you're looking for a cozy corner to read, an open mic to share your art, or simply a beautifully aesthetic space to connect with fellow creators, you've found your home.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Events Hosted</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10k+</h3>
+                        <p>Community</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4.9</h3>
+                        <p>Star Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">The Aaromale <span>Experience</span></h2>
+                <p>Immerse yourself in our multi-faceted sanctuary.</p>
+            </div>
+            <div class="experience-cards">
+                <div class="card reveal-up delay-1">
+                    <div class="card-icon"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Café Experience</h3>
+                    <p>Artisanal coffee, soulful food, and an aesthetic ambience perfect for deep work or deep conversations.</p>
+                </div>
+                <div class="card reveal-up delay-2">
+                    <div class="card-icon"><i class="fas fa-microphone-alt"></i></div>
+                    <h3>Events & Open Mic</h3>
+                    <p>Experience the magic of live music, poetry, and storytelling under the warm string lights.</p>
+                </div>
+                <div class="card reveal-up delay-3">
+                    <div class="card-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Creative Workshops</h3>
+                    <p>Join our thriving community for pottery, painting, and skill-building workshops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Our <span>Menu</span></h2>
+                <p>Crafted with love, served with passion.</p>
+            </div>
+            
+            <div class="menu-tabs reveal-up">
+                <button class="menu-tab active" data-target="coffee">Coffee</button>
+                <button class="menu-tab" data-target="desserts">Desserts</button>
+                <button class="menu-tab" data-target="snacks">Snacks</button>
+                <button class="menu-tab" data-target="main">Main Course</button>
+            </div>
+
+            <div class="menu-content active" id="coffee">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Brownie Cold Coffee</h4>
+                            <span class="price">₹250</span>
+                        </div>
+                        <p>Our signature cold coffee blended with rich, fudgy brownie.</p>
+                        <span class="badge popular">Popular</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hot Chocolate</h4>
+                            <span class="price">₹220</span>
+                        </div>
+                        <p>Thick, European-style hot chocolate topped with marshmallows.</p>
+                        <span class="badge popular">Must Try</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caramel Macchiato</h4>
+                            <span class="price">₹240</span>
+                        </div>
+                        <p>Freshly pulled espresso layered with vanilla and smooth caramel.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Vietnamese Iced Coffee</h4>
+                            <span class="price">₹260</span>
+                        </div>
+                        <p>Strong dark roast with sweet condensed milk over ice.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-content" id="desserts">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Classic Tiramisu</h4>
+                            <span class="price">₹300</span>
+                        </div>
+                        <p>Espresso-soaked ladyfingers with rich mascarpone cream.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Blueberry Cheesecake</h4>
+                            <span class="price">₹280</span>
+                        </div>
+                        <p>New York style baked cheesecake with wild blueberry compote.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-content" id="snacks">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Chicken Nachos</h4>
+                            <span class="price">₹320</span>
+                        </div>
+                        <p>Crispy tortilla chips loaded with grilled chicken, cheese, salsa, and sour cream.</p>
+                        <span class="badge popular">Popular</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Onion Rings</h4>
+                            <span class="price">₹200</span>
+                        </div>
+                        <p>Golden, beer-battered onion rings served with our house dip.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-content" id="main">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Creamy Pesto Pasta</h4>
+                            <span class="price">₹380</span>
+                        </div>
+                        <p>Penne tossed in a rich basil pesto sauce with cherry tomatoes and parmesan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Aaromale Special Pizza</h4>
+                            <span class="price">₹450</span>
+                        </div>
+                        <p>Wood-fired pizza with sundried tomatoes, olives, jalapeños, and fresh mozzarella.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-cta reveal-up">
+                <a href="#" class="btn btn-outline">Download Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+        <div class="events-bg-glow"></div>
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Upcoming <span>Events</span></h2>
+                <p>Join the community. Discover new passions.</p>
+            </div>
+            
+            <div class="events-list">
+                <div class="event-row reveal-up">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month">Oct</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Acoustic Open Mic Night</h3>
+                        <p>Calling all singers, poets, and storytellers. Stage is yours.</p>
+                    </div>
+                    <div class="event-action">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="event-row reveal-up delay-1">
+                    <div class="event-date">
+                        <span class="day">02</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Canvas & Coffee: Painting Workshop</h3>
+                        <p>Guided acrylic painting session. All materials provided.</p>
+                    </div>
+                    <div class="event-action">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="event-row reveal-up delay-2">
+                    <div class="event-date">
+                        <span class="day">10</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Indie Music Showcase</h3>
+                        <p>Featuring top local indie bands from Hyderabad.</p>
+                    </div>
+                    <div class="event-action">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="host-event reveal-up">
+                <h3>Want to host your own event?</h3>
+                <p>We provide the space, the vibe, and the audience.</p>
+                <a href="#cta" class="btn btn-outline">Inquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Visual <span>Journey</span></h2>
+                <p>A glimpse into the Aaromale experience.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item item-1 reveal-up">
+                    <img src="assets/images/gallery_food.png" alt="Aaromale Food">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item item-2 reveal-up delay-1">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Cafe Ambience">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item item-3 reveal-up delay-2">
+                    <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=800&q=80" alt="Coffee">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item item-4 reveal-up">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Open Mic">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item item-5 reveal-up delay-1">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="Latte Art">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item item-6 reveal-up delay-2">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=800&q=80" alt="Workshops">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Community <span>Love</span></h2>
+            </div>
+            
+            <div class="reviews-slider reveal-up">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Absolutely love the bohemian vibe! The string lights and cozy seating make it the perfect place to unwind. Their Brownie Cold Coffee is a must-try."</p>
+                    <div class="reviewer">
+                        <div class="avatar">S</div>
+                        <div class="reviewer-info">
+                            <h4>Sneha R.</h4>
+                            <span>Local Guide</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Attended an open mic night here and it was magical. The crowd is so supportive and the acoustic acoustics are great. It's truly a creative sanctuary."</p>
+                    <div class="reviewer">
+                        <div class="avatar">K</div>
+                        <div class="reviewer-info">
+                            <h4>Karthik M.</h4>
+                            <span>Musician</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best workspace disguised as a cafe. Fast wifi, great food, and inspiring surroundings. The pesto pasta is delicious."</p>
+                    <div class="reviewer">
+                        <div class="avatar">A</div>
+                        <div class="reviewer-info">
+                            <h4>Anjali D.</h4>
+                            <span>Freelancer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-box reveal-up">
+                <h2>Ready for an Unforgettable Experience?</h2>
+                <p>Reserve Your Table or Visit Us Today</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary">Reserve Now</a>
+                    <a href="#" class="btn btn-outline">Get Directions</a>
+                    <a href="#" class="btn btn-secondary">Order Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">Aaromale<span>.</span></a>
+                    <p>More than a café. A space for creators, thinkers, and artists to come together.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Film Nagar, Jubilee Hills, Hyderabad, 500096</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> hello@aaromale.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul class="hours-info">
+                        <li><span>Mon - Thu:</span> 10:00 AM - 11:00 PM</li>
+                        <li><span>Fri - Sun:</span> 09:00 AM - 12:00 AM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aaromale Cafe & Creative Community. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
+</body>
+</html>
