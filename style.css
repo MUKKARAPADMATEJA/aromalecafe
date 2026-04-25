@@ -776,6 +776,17 @@ height: 60px;
     letter-spacing: 1px;
 }
 
+.menu-header-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.menu-header-btn .btn {
+    padding: 0.8rem 2.5rem;
+    font-size: 1rem;
+}
+
 .menu-cta {
     text-align: center;
     margin-top: 4rem;
