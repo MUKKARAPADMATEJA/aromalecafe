@@ -1119,8 +1119,19 @@ height: 60px;
 .contact-info i {
     color: var(--primary);
     margin-top: 5px;
+.hours-info li {
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding: 0.8rem 0;
 }
 
+.hours-info span {
+    color: #fff;
+    white-space: nowrap;
+}
 
 .footer-bottom {
     text-align: center;
