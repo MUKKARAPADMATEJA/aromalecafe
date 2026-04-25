@@ -175,6 +175,7 @@ section {
     box-shadow: 0 8px 25px rgba(220, 39, 67, 0.4);
 }
 
+/* Dropdown Styles */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -1119,6 +1120,8 @@ height: 60px;
 .contact-info i {
     color: var(--primary);
     margin-top: 5px;
+}
+
 .hours-info li {
     color: var(--text-muted);
     display: flex;
