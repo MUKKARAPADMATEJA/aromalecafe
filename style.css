@@ -407,7 +407,7 @@ height: 60px;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: url('assets/images/hero.png') center/cover no-repeat;
+    background: url('assets/images/hero.jpg') center top/cover no-repeat;
 }
 
 .hero-overlay {
