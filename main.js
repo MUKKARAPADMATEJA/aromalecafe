@@ -111,18 +111,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 7. Order Online Dropdown Toggle
-    const orderBtn = document.getElementById('orderBtn');
-    const orderDropdown = document.getElementById('orderDropdown');
+    // 7. Dropdown Toggle (Generic)
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+        const dropdown = btn.nextElementSibling;
+        if (dropdown && dropdown.classList.contains('dropdown-menu')) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                // Close other dropdowns first
+                document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                    if (menu !== dropdown) menu.classList.remove('show');
+                });
+                dropdown.classList.toggle('show');
+            });
+        }
+    });
 
-    if (orderBtn && orderDropdown) {
-        orderBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            orderDropdown.classList.toggle('show');
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+            menu.classList.remove('show');
         });
-
-        document.addEventListener('click', () => {
-            orderDropdown.classList.remove('show');
-        });
-    }
+    });
 });
