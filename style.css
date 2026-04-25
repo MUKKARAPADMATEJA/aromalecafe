@@ -1060,7 +1060,6 @@ height: 60px;
 .social-links a:hover {
     background: var(--primary);
     color: var(--bg-dark);
-    transform: translateY(-3px);
 }
 
 .footer-col ul {
